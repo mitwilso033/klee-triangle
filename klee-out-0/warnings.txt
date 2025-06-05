@@ -1,0 +1,2 @@
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING ONCE: calling external: printf(128138104049664) at triangle.c:4 0
