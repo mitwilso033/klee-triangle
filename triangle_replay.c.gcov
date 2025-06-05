@@ -1,0 +1,22 @@
+        -:    0:Source:triangle_replay.c
+        -:    0:Graph:triangle_replay.gcno
+        -:    0:Data:triangle_replay.gcda
+        -:    0:Runs:24
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+       16:    3:void triangle(int a, int b, int c) {
+       16:    4:	    if ((a + b > c) && (a + c > b) && (b + c > a)) {
+        5:    5:		            if (a == b || a == c || b == c) {
+        4:    6:				                if (a == b && a == c)
+        1:    7:							                printf("equilateral triangle.\n");
+        -:    8:						            else
+        3:    9:								                    printf("isosceles triangle.\n");
+        4:   10:							            } else {
+        1:   11:									                printf("triangle.\n");
+        -:   12:											        }
+        5:   13:			        } else {
+       11:   14:					        printf("non-triangle.\n");
+        -:   15:						    }
+       16:   16:}
+        -:   17:
