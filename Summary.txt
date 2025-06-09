@@ -1,0 +1,14 @@
+Here's what the report tells you about the execution of your Triangle.c code:
+
+Overall Coverage for Triangle.c:
+
+Line Coverage: 66.7% (6 out of 9 executable lines were hit)
+Function Coverage: 100.0% 
+
+Line-by-Line Breakdown:
+
+Lines 1-8: These lines, including the printf("equilateral triangle.\n"); statement, were executed at least once
+Line 9: printf("isosceles triangle.\n"); was not executed (indicated by 0 in the "Line data" column). This means the fuzzer did not find any inputs that led to the program identifying an "isosceles triangle" that was not equilateral.
+Line 12: printf("triangle.\n"); was not executed (indicated by 0 in the "Line data" column). This means the fuzzer did not find any inputs that led to the program identifying a generic "triangle" (scalene).
+Line 15: printf("non-triangle.\n"); was not executed (indicated by 0 in the "Line data" column). This means the fuzzer did not find any inputs where the side lengths did not form a valid triangle.
+Line 17: The return; statement at the end of the triangle function was executed (indicated by 1).
